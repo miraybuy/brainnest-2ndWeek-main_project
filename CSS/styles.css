@@ -1,3 +1,57 @@
-* {
-  font-family: "Roboto", sans-serif;
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary--color: rgb(255, 255, 255);
+  --dark-background-color: #1f2937;
+  --secondary-color: #3882f6;
+  --light-background-color: #e5e7eb;
+  --button-padding: 18px 30px;
 }
+/*top section */
+nav {
+  display: flex;
+  flex-direction: column;
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav li {
+  display: inline;
+  list-style: none;
+}
+nav a {
+  text-decoration: none;
+  color: var(--primary--color);
+}
+.first-section {
+  color: var(--primary--color);
+  background-color: var(--dark-background-color);
+}
+/*images */
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+.image-container li {
+  display: inline;
+  list-style: none;
+}
+.image-container ul {
+  display: flex;
+  justify-content: center;
+}
+.image-container p {
+  text-align: center;
+  font-size: 12px;
+}
+.image-container img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  border-radius: 8%;
+}
+/*quote section */
+/*action section */
+/*footer */
