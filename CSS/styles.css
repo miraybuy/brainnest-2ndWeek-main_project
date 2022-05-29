@@ -6,15 +6,13 @@
   --light-background-color: #e5e7eb;
   --button-padding: 6px 20px;
 }
+
 body {
   margin: 0;
   padding: 0;
+  font-family: var(--font-family);
 }
-button {
-  padding: var(--button-padding);
-  border-radius: 8px;
-  border: none;
-}
+
 /*top section */
 nav {
   display: flex;
@@ -25,7 +23,7 @@ nav {
 nav i {
   font-size: 24px;
   display: flex;
-  padding: 18px 150px;
+  padding: 18px 100px;
   text-align: right;
 }
 
@@ -53,6 +51,7 @@ nav a {
   display: flex;
   flex-direction: row;
   padding-bottom: 20px;
+  margin-left: 30px;
 }
 .hero {
   padding: 50px;
@@ -68,6 +67,9 @@ h1 {
 .hero button {
   color: var(--primary--color);
   background-color: var(--secondary-color);
+  padding: var(--button-padding);
+  border-radius: 8px;
+  border: none;
 }
 .placeholder-image {
   display: inline-block;
@@ -77,9 +79,16 @@ h1 {
 
 /*images */
 
+h3 {
+  font-size: 36px;
+  text-align: center;
+}
+
 .image-container {
   display: flex;
   flex-direction: column;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 .image-container li {
   display: inline;
@@ -92,14 +101,71 @@ h1 {
 .image-container p {
   text-align: center;
   font-size: 12px;
+  opacity: 0.7;
+  padding: 5px 10px;
+  margin-top: 0;
 }
 .image-container img {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 40%;
+  width: 80%;
   border-radius: 8%;
 }
 /*quote section */
+.quote-container {
+  background-color: var(--light-background-color);
+  padding: 80px;
+}
+.quote {
+  font-size: 36px;
+  font-weight: 300;
+  font-style: italic;
+  color: var(--dark-background-color);
+  padding: 30px;
+  margin-bottom: 0;
+}
+#author {
+  font-weight: 500;
+  text-align: end;
+  padding-right: 100px;
+  margin-top: 0;
+}
 /*action section */
+.action-container {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--secondary-color);
+  color: var(--primary--color);
+  margin: 100px;
+  border-radius: 8px;
+}
+.action-call {
+  padding: 20px 50px;
+}
+h5 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.action-call p {
+  margin-top: 0;
+  font-size: 16px;
+  opacity: 0.7;
+}
+.action-container button {
+  border: 1px solid var(--primary--color);
+  background-color: var(--secondary-color);
+  color: var(--primary--color);
+  padding: var(--button-padding);
+  border-radius: 8px;
+  margin: 80px auto;
+  font-size: 20px;
+}
 /*footer */
+footer {
+  background-color: var(--dark-background-color);
+  color: var(--primary--color);
+  text-align: center;
+  padding: 30px;
+}
