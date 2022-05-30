@@ -2,7 +2,7 @@
   --font-family: "Roboto", sans-serif;
   --primary--color: #f9faf8;
   --dark-background-color: #1f2937;
-  --secondary-color: #3882f6;
+  --secondary-color: rgb(56, 130, 246);
   --light-background-color: #e5e7eb;
   --button-padding: 6px 20px;
 }
@@ -19,11 +19,12 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   margin: 15px 30px;
+  margin-bottom: 30px;
 }
 nav i {
   font-size: 24px;
   display: flex;
-  padding: 18px 100px;
+  padding: 18px 75px;
   text-align: right;
 }
 
@@ -55,10 +56,13 @@ nav a {
 }
 .hero {
   padding: 50px;
+  padding-top: 0;
+  margin-left: 20px;
 }
 h1 {
   font-size: 48px;
   font-weight: 900;
+  margin-top: 0;
 }
 .hero p {
   font-size: 18px;
@@ -71,10 +75,16 @@ h1 {
   border-radius: 8px;
   border: none;
 }
+.hero button:hover {
+  background-color: var(--primary--color);
+  color: var(--dark-background-color);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
+}
 .placeholder-image {
   display: inline-block;
   margin-left: auto;
-  margin-right: 200px;
+  margin-right: 100px;
 }
 
 /*images */
@@ -101,7 +111,7 @@ h3 {
 .image-container p {
   text-align: center;
   font-size: 12px;
-  opacity: 0.7;
+  opacity: 0.6;
   padding: 5px 10px;
   margin-top: 0;
 }
@@ -161,6 +171,12 @@ h5 {
   border-radius: 8px;
   margin: 80px auto;
   font-size: 20px;
+}
+.action-container button:hover {
+  background-color: var(--primary--color);
+  color: var(--secondary-color);
+  cursor: pointer;
+  transition: all 100ms ease-in-out;
 }
 /*footer */
 footer {
